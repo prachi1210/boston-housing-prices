@@ -6,7 +6,7 @@ This project applies  basic machine learning concepts on data collected for hous
 - Obtained important features and descriptive statistics about the dataset. 
 - Split the data into testing and training subsets, and determined a suitable performance metric for this problem. 
 - Analyzed performance graphs for a learning algorithm with varying parameters and training set sizes. This enabled picking up the optimal model that best generalizes for unseen data. 
-- Tested this optimal model on a new sample and compare the predicted selling price to your statistics.
+- Tested this optimal model on a new sample and compared the predicted selling price to statistics for nearest neighbors.
 
 **Software and Libraries**
 
