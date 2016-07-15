@@ -53,7 +53,7 @@ vs.ModelLearning(features, prices)
 ```
 ![png](extras/output_20_0.png)
 
-Learning the data: 
+**Learning the data:**
 If we consider the graph with max_depth =3, the training curve has a negative slope and as more training points are added, the score of the training curve decreases before stabilising at ~0.8. At the same time, adding more training points increases the score of the testing data which undergoes a sharp positive slope in the initial testing points before stabilising at a value of close to ~0.8. At close to 300 points, the two curves converge before diverging slightly. 
 
 From this, it would be safe to assume that 300 training points represents the optimum training-testing trade off.
@@ -67,11 +67,11 @@ vs.ModelComplexity(X_train, y_train)
 ```
 ![png](extras/output_24_0.png)
 
-Bias-Variance Tradeoff:
+**Bias-Variance Tradeoff:**
 - When the model is trained with max depth of 1, the model has high bias because training score and validation score are both low, and the model is consequently underfitting the data. 
 - When the model is tested with max depth 10, the model has low bias and high variance. In fact, the training R^2 is close to 1 while the validation R^2 is comparitively lower (closer to ~0.7). This indicates overfitting of data.
 
-Best Guess Optimal Model:
+**Best Guess Optimal Model:**
 A max depth of 4 best generalises the unseen data as validation score for depth ~ 4 is the highest. As the training score increases beyond max_depth 4, the model starts overfitting the data and this is indicated by a decrease in validation R^2. A max_depth of 4 indicates a model which is neither over-simplified nor overtly complex.
 
 **Fitting a model**
@@ -128,11 +128,15 @@ def nearest_neighbor_price(x):
     return neighbor_avg
 ```
 Predicted selling price for Client 1's home: $339,570.00
+
 Predicted selling price for Client 2's home: $212,223.53
+
 Predicted selling price for Client 3's home: $938,053.85
 
 The predicted 5 nearest neighbors price for Client 1's home is: $315,840.00
+
 The predicted 5 nearest neighbors price for Client 2's home is: $280,980.00
+
 The predicted 5 nearest neighbors price for Client 3's home is: $808,920.00
 
 **Sensitivity**
